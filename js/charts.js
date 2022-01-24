@@ -41,6 +41,7 @@ const myChart1 = new Chart(ctx1, {
     'Decemder'],
         datasets: [{
              label: 'men',
+             label: 'women',
             data: [0, 10000, 20000, 30000, 40000],
             backgroundColor: [
                 'rgba(128,0,128)',
@@ -51,12 +52,12 @@ const myChart1 = new Chart(ctx1, {
                 'rgba(220, 92, 124, 1)'
             ],
             borderColor: [
-                'rgba(255, 99, 132, 1)',
-                'rgba(255, 99, 132, 1)',
-                'rgba(255, 99, 132, 1)',
-                'rgba(255, 99, 132, 1)',
-                'rgba(255, 99, 132, 1)',
-                'rgba(255, 99, 132, 1)'
+                'rgba(128,0,128)',
+                'rgba(220, 92, 124, 1)',
+                'rgba(128,0,128)',
+                'rgba(220, 92, 124, 1)',
+                'rgba(128,0,128)',
+                'rgba(220, 92, 124, 1)'
             ],
             borderWidth: 3
         }]
@@ -92,7 +93,7 @@ const myChart2 = new Chart(ctx2, {
                 'rgba(255, 99, 132, 1)',
                 'rgba(255, 99, 132, 1)'
             ],
-            borderWidth: 3
+            borderWidth: 1
         }]
     },
     options: {
@@ -105,27 +106,26 @@ const myChart2 = new Chart(ctx2, {
 });
 const ctx3 = document.getElementById('myChart3').getContext('2d');
 const myChart3 = new Chart(ctx3, {
-    type: 'area',
+    type: 'line',
     data: {
-        labels: ['Age1', 'Age3', 'Age5', 'Age7', 'Age9', 'Age11',
-    'Age13'],
+        labels: ['January', 'Fedruary', 'March', 'April', 'May', 'June'],
         datasets: [{
-            data: [0, 10000, 20000, 30000, 40000],
+            data: [1, 2,5, 3,5, 4, 5, 3],
             backgroundColor: [
-                'rgba(255, 99, 132, 0.2)',
-                'rgba(54, 162, 235, 0.2)',
-                'rgba(255, 206, 86, 0.2)',
-                'rgba(75, 192, 192, 0.2)',
-                'rgba(153, 102, 255, 0.2)',
-                'rgba(255, 159, 64, 0.2)'
+                'rgba(128,0,128)',
+                'rgba(220, 92, 124, 1)',
+                'rgba(128,0,128)',
+                'rgba(220, 92, 124, 1)',
+                'rgba(128,0,128)',
+                'rgba(220, 92, 124, 1)'
             ],
             borderColor: [
-                'rgba(255, 99, 132, 1)',
-                'rgba(255, 99, 132, 1)',
-                'rgba(255, 99, 132, 1)',
-                'rgba(255, 99, 132, 1)',
-                'rgba(255, 99, 132, 1)',
-                'rgba(255, 99, 132, 1)'
+                'rgba(220, 92, 124, 1)',
+                'rgba(220, 92, 124, 1)',
+                'rgba(220, 92, 124, 1)',
+                'rgba(220, 92, 124, 1)',
+                'rgba(220, 92, 124, 1)',
+                'rgba(220, 92, 124, 1)'
             ],
             borderWidth: 3
         }]
