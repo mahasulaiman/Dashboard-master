@@ -41,26 +41,28 @@ const myChart1 = new Chart(ctx1, {
     'Decemder'],
         datasets: [{
              label: 'men',
-             label: 'women',
-            data: [0, 10000, 20000, 30000, 40000],
+            data: [0, 10000, 20000, 30000, 35000],
             backgroundColor: [
-                'rgba(128,0,128)',
-                'rgba(220, 92, 124, 1)',
-                'rgba(128,0,128)',
-                'rgba(220, 92, 124, 1)',
-                'rgba(128,0,128)',
                 'rgba(220, 92, 124, 1)'
             ],
             borderColor: [
-                'rgba(128,0,128)',
-                'rgba(220, 92, 124, 1)',
-                'rgba(128,0,128)',
-                'rgba(220, 92, 124, 1)',
-                'rgba(128,0,128)',
+
                 'rgba(220, 92, 124, 1)'
             ],
             borderWidth: 3
-        }]
+        },
+        {
+            label: 'women',
+           data: [0, 35000, 30000, 20000, 10000],
+           backgroundColor: [
+               'rgba(128,0,128)',
+               
+           ],
+           borderColor: [
+               'rgba(128,0,128)'
+           ],
+           borderWidth: 3
+       }]
     },
     options: {
         scales: {
