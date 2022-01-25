@@ -5,7 +5,7 @@ const myChart = new Chart(ctx, {
         labels: ['Age1', 'Age3', 'Age5', 'Age7', 'Age9', 'Age11',
     'Age13'],
         datasets: [{
-            data: [0, 30000, 25000, 20000, 20000, 27000, 32000, 35000, 30000, 30000, 20000, 37000, 40000],
+            data: [12, 19, 3, 5, 2, 3],
             backgroundColor: [
                 'rgba(128,0,128)',
                 'rgba(220, 92, 124, 1)',
@@ -76,7 +76,7 @@ const myChart2 = new Chart(ctx2, {
     data: {
         labels: ['riyadh', 'Jaddah', 'Sharqia', 'Mecca'],
         datasets: [{
-            data: [0, 10000, 20000, 30000, 40000],
+            data: [12, 19, 3, 5],
             backgroundColor: [
                 'rgba(128,0,128)',
                 'rgba(220, 92, 124, 1)',
