@@ -36,9 +36,6 @@ const myChart = new Chart(ctx, {
                     min:0,
                     max: 40000,
                     maxTicksLimit: 5
-                },
-                gridLines: {
-                    color: "rgb(55, 49, 94, 0.2)",
                 }
             }],
             },
