@@ -5,33 +5,47 @@ const myChart = new Chart(ctx, {
         labels: ['Age1', 'Age3', 'Age5', 'Age7', 'Age9', 'Age11',
     'Age13'],
         datasets: [{
-            data: [12, 19, 3, 5, 2, 3],
-            backgroundColor: [
-                'rgba(128,0,128)',
-                'rgba(220, 92, 124, 1)',
-                'rgba(128,0,128)',
-                'rgba(220, 92, 124, 1)',
-                'rgba(128,0,128)',
-                'rgba(220, 92, 124, 1)'
-            ],
-            borderColor: [
-                'rgba(220, 92, 124, 1)',
-                'rgba(220, 92, 124, 1)',
-                'rgba(220, 92, 124, 1)',
-                'rgba(220, 92, 124, 1)',
-                'rgba(220, 92, 124, 1)',
-                'rgba(220, 92, 124, 1)'
-            ],
-            borderWidth: 3
-        }]
+        lineTension: 0.3,
+        backgroundColor: "rgb(55, 49, 94, 0.5)",
+        borderColor: "rgba(217,65,103,0.8)",
+        PointBackgroundColor: "rgba(217,65,103,0.8)",
+        pointBorderColor : "rgba(217,65,103,1)",
+        pointHoverBackgroundColor: "rgba(217,65,103,0.8)",
+        pointRadius: 5,
+        pointHoverRadius: 5,
+        pointHitRadius: 50,
+        pointBorderWidth: 2,
+        data:[7559, 30201, 24201, 20012, 19501, 26011, 32420, 35012, 30087, 29515, 20215, 35785, 39741]
+        }],
     },
     options: {
         scales: {
-            y: {
-                beginAtZero: true
+            xAxes:[{
+                time:{
+                    unit:'data'
+                },
+                gridLines:{
+                    display: false
+                },
+                ticks:{
+                    maxTicksLimit: 7,
+                }
+            }],
+            yAxes:[{
+                ticks:{
+                    min:0,
+                    max: 40000,
+                    maxTicksLimit: 5
+                },
+                gridLines: {
+                    color: "rgb(55, 49, 94, 0.2)",
+                }
+            }],
+            },
+            legend: {
+                display: false
             }
         }
-    }
 });
 const ctx1 = document.getElementById('myChart1').getContext('2d');
 const myChart1 = new Chart(ctx1, {
@@ -112,33 +126,47 @@ const myChart3 = new Chart(ctx3, {
     data: {
         labels: ['January', 'Fedruary', 'March', 'April', 'May', 'June'],
         datasets: [{
-            data: [1, 2,5, 3,5, 4, 5, 3],
-            backgroundColor: [
-                'rgba(128,0,128)',
-                'rgba(220, 92, 124, 1)',
-                'rgba(128,0,128)',
-                'rgba(220, 92, 124, 1)',
-                'rgba(128,0,128)',
-                'rgba(220, 92, 124, 1)'
-            ],
-            borderColor: [
-                'rgba(220, 92, 124, 1)',
-                'rgba(220, 92, 124, 1)',
-                'rgba(220, 92, 124, 1)',
-                'rgba(220, 92, 124, 1)',
-                'rgba(220, 92, 124, 1)',
-                'rgba(220, 92, 124, 1)'
-            ],
-            borderWidth: 3
-        }]
+        lineTension: 0.3,
+        backgroundColor: "rgb(55, 49, 94, 0.5)",
+        borderColor: "rgba(217,65,103,0.8)",
+        PointBackgroundColor: "rgba(217,65,103,0.8)",
+        pointBorderColor : "rgba(217,65,103,1)",
+        pointHoverBackgroundColor: "rgba(217,65,103,0.8)",
+        pointRadius: 5,
+        pointHoverRadius: 5,
+        pointHitRadius: 50,
+        pointBorderWidth: 2,
+        data:[7559, 30201, 24201, 20012, 19501, 26011, 32420, 35012, 30087, 29515, 20215, 35785, 39741]
+        }],
     },
     options: {
         scales: {
-            y: {
-                beginAtZero: true
+            xAxes:[{
+                time:{
+                    unit:'data'
+                },
+                gridLines:{
+                    display: false
+                },
+                ticks:{
+                    maxTicksLimit: 7,
+                }
+            }],
+            yAxes:[{
+                ticks:{
+                    min:0,
+                    max: 40000,
+                    maxTicksLimit: 5
+                },
+                gridLines: {
+                    color: "rgb(55, 49, 94, 0.2)",
+                }
+            }],
+            },
+            legend: {
+                display: false
             }
         }
-    }
 });
 // Line Chart for Orders
 var ordersChart = document.getElementById("myAreaChart");
