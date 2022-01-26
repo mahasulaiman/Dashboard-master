@@ -57,4 +57,27 @@ const products = [
   },
 ];
 
+document.getElementById('test1').innerHTML = products.map(card => 
+    `<div class="card mb-3 p-3 id="${card.ProductId}"">
+    <div class="row g-0">
+    <div class="col-md-3 text-center">
+    <img src="${card.image}" class="img-fluid rounded-start" alt="...">
+    </div>
+    <div class="col-md-6">
+    <div class="card-body">
+    <h5 class="card-title">${card.name}</h5>
+    <p class="card-text">${card.description}</p>
+    </p>
+    </div>
+    </div>
+    <div class="col-md-3 text-center">
+    <h5 class="price">${card.price}</h5>
+    <h5 class="price">${card.status}</h5>
+<button type="button" class="btn btn-primary w-75 my-3">products</button>
+<button type="button" class="btn btn-danger w-75 my-3">delete</button>
+
+      </div>
+      </div>
+    </div>`
+).join('')
 
